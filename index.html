@@ -17,8 +17,40 @@
             font-family: "Microsoft JhengHei", Arial, sans-serif;
             overflow: hidden;         /* 防止手機版捲動 */
         }
-<!-- 第四關：中獎資訊 -->
-<div class="grid-item" style="background-color: #b22020; border: 2px solid #ffffff;">
-    <h1 style="color: #ffffff; font-size: 28px; margin: 0; animation: bounce 1s infinite;">恭喜中獎！</h1>
-    <div style="font-size: 40px;">🧧</div>
-</div>
+
+        .container {
+            text-align: center;       /* 文字置中 */
+            padding: 20px;
+        }
+
+        /* 標題動畫效果 */
+        h1 {
+            font-size: 3rem;          /* 大字體 */
+            margin: 0;
+            letter-spacing: 5px;      /* 字距 */
+            animation: celebrate 0.8s ease-in-out infinite alternate;
+        }
+
+        /* 簡單的縮放動畫，增加喜慶感 */
+        @keyframes celebrate {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
+        }
+
+        /* 裝飾性文字 */
+        p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>恭喜中獎！</h1>
+        <p>福氣滿滿，好運連連</p>
+    </div>
+
+</body>
+</html>
